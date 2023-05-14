@@ -13,5 +13,6 @@
 	},
 	"author": "Brandon Lombard",
 	"description": "This is a practice application",
-	"keywords": [ "freecodecamp", "backend", "nodejs" ]
+	"keywords": [ "freecodecamp", "backend", "nodejs" ],
+	"license": "MIT"
 }
