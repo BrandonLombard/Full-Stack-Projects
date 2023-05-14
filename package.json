@@ -12,5 +12,6 @@
 		"url": "https://github.com/BrandonLombard/Full-Stack-Projects"
 	},
 	"author": "Brandon Lombard",
-	"description": "This is a practice application"
+	"description": "This is a practice application",
+	"keywords": [ "freecodecamp", "backend", "nodejs" ]
 }
