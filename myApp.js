@@ -3,17 +3,21 @@ let app = express();
 
 require('dotenv').config()
 
-// console.log('Hello World');
-
 app.get('/', function (req, res) {
     res.sendFile(__dirname + "/views/index.html");
 });
 
 app.get("/json", (req, res) => {
-    res.json({
-      message: "Hello json"
+    var message = 'Hello json';
+    
+    if (process.env.MESSAGE_STYLE === 'uppercase') {
+        message = message.toUpperCase();
+    }
+    
+    const data = { message };
+    res.json(data);
+
     });
-  });
 
 app.use('/public', express.static(__dirname + "/public"));
 
